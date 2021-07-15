@@ -16,7 +16,8 @@ def download_broadcast_semua():
         print(f"download dan broadcast {urls[k]}")
         waktu = time.time()
         args = (urls[k], True, TARGET_IP, TARGET_PORT)
-        #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download dan broadcast gambar secara multithread
+        #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download 
+        #dan broadcast gambar secara multithread
         texec[k] = task.submit(lambda p: download_broadcast_gambar(*p), args)
 
     #setelah menyelesaikan tugasnya, dikembalikan ke main thread dengan memanggil result
