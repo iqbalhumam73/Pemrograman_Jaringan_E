@@ -8,6 +8,7 @@ server_address=('0.0.0.0',7777)
 def send_command(command_str=""):
     global server_address
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # print(server_address)
     sock.connect(server_address)
     logging.warning(f"connecting to {server_address}")
     try:
@@ -67,5 +68,5 @@ def remote_get(filename=""):
 if __name__=='__main__':
     server_address=('0.0.0.0',6666)
     remote_list()
-    #remote_get('donalbebek.jpg')
+    remote_get('donalbebek.jpg')
 
