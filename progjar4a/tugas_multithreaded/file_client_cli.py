@@ -6,7 +6,7 @@ import logging
 ip_server = '192.168.122.173'
 server_port = 7777
 
-server_address=(ip_server,server_port)
+server_address=('192.168.122.173',7777)
 
 def send_command(command_str=""):
     global server_address
