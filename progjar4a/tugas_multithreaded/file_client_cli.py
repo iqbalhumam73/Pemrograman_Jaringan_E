@@ -6,7 +6,7 @@ import logging
 ip_server = '192.168.122.173'
 server_port = 7777
 
-server_address=('192.168.122.173',7777)
+server_address=(ip_server,server_port)
 
 def send_command(command_str=""):
     global server_address
@@ -69,7 +69,7 @@ def remote_get(filename=""):
 
 
 if __name__=='__main__':
-    server_address=('0.0.0.0',6666)
+    server_address=(ip_server,server_port)
     remote_list()
     remote_get('donalbebek.jpg')
 
