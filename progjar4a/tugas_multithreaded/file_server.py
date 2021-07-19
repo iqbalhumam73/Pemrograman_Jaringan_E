@@ -5,6 +5,8 @@ import logging
 import time
 import sys
 
+ip_server = '192.168.122.173'
+server_port = 7777
 
 from file_protocol import  FileProtocol
 fp = FileProtocol()
