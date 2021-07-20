@@ -2,7 +2,7 @@ import socket
 import os
 import json
 
-TARGET_IP = "192.168.122.88"
+TARGET_IP = "192.168.122.89"
 TARGET_PORT = 8889
 
 
