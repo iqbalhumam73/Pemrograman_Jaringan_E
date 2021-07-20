@@ -9,7 +9,7 @@ from chat import Chat
 
 chatserver = Chat()
 
-ip_server = '192.168.122.88'
+ip_server = '192.168.122.89'
 port_server = 8889
 
 class ProcessTheClient(threading.Thread):
